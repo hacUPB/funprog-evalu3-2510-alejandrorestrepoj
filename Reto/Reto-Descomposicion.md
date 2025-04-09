@@ -65,13 +65,15 @@ Ecuaciones:
 
 Variables de entrada: 
 
-* Si se desea calcular potencia activa, las variables de entrada seran potencia aparente y factor de potencia. 
-* Si se desea calcular la potencia aparente, las variables de entrada seran potencia activa y factor de potencia.
+* Si se desea calcular potencia activa, las variables de entrada seran voltaje, corriente y coseno de phi. 
+* Si se desea calcular la potencia aparente, las variables de entrada seran voltaje, corriente y coseno de phi. 
 * Si se desea calcular el factor de potencia, las variables de entrada seran potencia activa y factor de potencia. 
 
 Variable de salida: 
 
 * La variable que se decidio calcular.
+* La potencia reactiva.
+* El coseno de phi.
 
 Constantes: 
 
@@ -130,7 +132,7 @@ Constantes:
 * No hay.
 
 Ecuaciones:
-* R = (Vfuente​−V)/I
+* R = (Vf​ − V)/I
 * PR = I^2 * R
 * Ptotal = Vfuente * I
-* I = (Vfuente - V)/R
+* I = (Vf - V)/R
