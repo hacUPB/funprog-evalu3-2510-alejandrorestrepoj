@@ -7,7 +7,7 @@ int menu(void)
     int opc;
     printf("Elegir: \n");
     printf(" 1. Ley de Ohm\n 2. Factor de potencia\n 3. Resistencia de un conductor \n 4. Resistencia de un LED. \n");
-    scanf("%d\n", &opc);
+    scanf("%d", &opc);
     return opc;
 }
 
@@ -21,7 +21,7 @@ int main()
     int opc = menu();
     do
     {
-        int opc = menu();
+        opc = menu();
         switch (opc)
         {
         case 1:
@@ -47,7 +47,7 @@ int main()
         default:
             break;
         }
-    } while (opc <= 4);
+    } while (opc != 5);
     return 0;
 }
 
