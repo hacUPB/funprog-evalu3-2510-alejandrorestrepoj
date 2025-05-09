@@ -17,3 +17,5 @@ El código ensamblador (.s) es un archivo legible por humanos que contiene instr
 De man gcc : -s Elimina toda la tabla de símbolos y la información de reubicación del ejecutable 
 
 ### ¿Qué sucede si omitimos la etapa de **linker**?
+
+El programa no se podrá ejecutar correctamente, ya que el linker es responsable de unir (o enlazar) los diferentes módulos o archivos objeto generados durante la compilación.
